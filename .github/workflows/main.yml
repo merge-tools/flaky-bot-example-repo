@@ -1,0 +1,39 @@
+name: Main
+
+on:
+  push:
+    branches: ['main']
+
+env:
+  FLAKY_BOT_API_KEY: ${{ secrets.FLAKY_BOT_API_KEY }}
+
+jobs:
+  unit-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+          cache: 'npm'
+      - run: npm ci
+      # `JEST_RETRIES` doesn't auto enable test retries.
+      # It needs to be used with `jest.retryTimes(numRetries)`.
+      - run: JEST_RETRIES=2 npm test
+
+  e2e-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+          cache: 'npm'
+      - name: Cypress Run
+        uses: cypress-io/github-action@v5
+        with:
+          command: CYPRESS_RETRIES=2 npm run e2e
