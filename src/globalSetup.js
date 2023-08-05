@@ -6,6 +6,6 @@ module.exports = async function (globalConfig, projectConfig) {
     {
       repositoryId: 674463592,
       jestConfig: `${globalConfig.rootDir}/jest.config.js`,
-    }
+    },
   );
 };

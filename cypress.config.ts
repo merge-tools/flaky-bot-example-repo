@@ -1,4 +1,4 @@
-import { defineConfig } from "cypress";
+import { defineConfig } from 'cypress';
 import { cypressPlugin } from '@flaky-bot/cypress-plugin';
 
 export default defineConfig({
