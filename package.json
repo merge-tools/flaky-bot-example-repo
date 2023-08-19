@@ -4,8 +4,8 @@
   "private": true,
   "dependencies": {
     "@babel/core": "^7.16.0",
-    "@flaky-bot/cypress-plugin": "^0.1.0-alpha.30",
-    "@flaky-bot/jest-plugin": "^0.1.0-alpha.30",
+    "@flaky-bot/cypress-plugin": "^0.1.0-alpha.31",
+    "@flaky-bot/jest-plugin": "^0.1.0-alpha.31",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.3",
     "@svgr/webpack": "^5.5.0",
     "@testing-library/jest-dom": "^5.17.0",
