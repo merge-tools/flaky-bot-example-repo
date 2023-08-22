@@ -1,5 +1,5 @@
 import { defineConfig } from 'cypress';
-import { cypressPlugin } from '@flaky-bot/cypress-plugin';
+import { cypressPlugin } from '@test-radar/cypress';
 
 export default defineConfig({
   e2e: {

@@ -1,4 +1,4 @@
-const { jestSetup } = require('@flaky-bot/jest-plugin');
+const { jestSetup } = require('@test-radar/jest');
 
 module.exports = async function (globalConfig, projectConfig) {
   await jestSetup(

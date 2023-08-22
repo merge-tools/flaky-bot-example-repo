@@ -5,7 +5,7 @@ on:
     branches: ['main']
 
 env:
-  FLAKY_BOT_API_KEY: ${{ secrets.FLAKY_BOT_API_KEY }}
+  TEST_RADAR_API_KEY: ${{ secrets.TEST_RADAR_API_KEY }}
 
 jobs:
   unit-test:
