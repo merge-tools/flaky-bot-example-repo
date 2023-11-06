@@ -5,7 +5,7 @@ on:
     branches: ['main']
 
 env:
-  TEST_RADAR_API_KEY: ${{ secrets.TEST_RADAR_API_KEY }}
+  TESTRADAR_API_KEY: ${{ secrets.TESTRADAR_API_KEY }}
 
 jobs:
   unit-test:

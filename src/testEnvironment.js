@@ -1,3 +1,3 @@
-const { TestRadarJSDOMEnvironment } = require('@test-radar/jest');
+const { TestRadarJSDOMEnvironment } = require('@testradar/jest');
 
 module.exports = TestRadarJSDOMEnvironment;

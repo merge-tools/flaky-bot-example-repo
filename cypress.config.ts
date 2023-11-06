@@ -1,5 +1,5 @@
 import { defineConfig } from 'cypress';
-import { setupTestRadar } from '@test-radar/cypress';
+import { setupTestRadar } from '@testradar/cypress';
 
 export default defineConfig({
   e2e: {

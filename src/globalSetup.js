@@ -1,4 +1,4 @@
-const { setupTestRadar } = require('@test-radar/jest');
+const { setupTestRadar } = require('@testradar/jest');
 
 module.exports = async function (globalConfig, projectConfig) {
   await setupTestRadar(
