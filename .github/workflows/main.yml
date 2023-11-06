@@ -21,7 +21,7 @@ jobs:
       - run: npm ci
       # `JEST_RETRIES` doesn't auto enable test retries.
       # It needs to be used with `jest.retryTimes(numRetries)`.
-      # see: https://github.com/merge-tools/test-radar-example-repo/blob/main/src/setupTests.ts#L7
+      # see: https://github.com/merge-tools/testradar-example-repo/blob/main/src/setupTests.ts#L7
       - run: JEST_RETRIES=2 npm test
 
   e2e-test:
