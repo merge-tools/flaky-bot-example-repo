@@ -7,4 +7,5 @@ export default defineConfig({
       setupTestRadar(on, { repositoryId: 674463592 });
     },
   },
+  retries: 2,
 });
