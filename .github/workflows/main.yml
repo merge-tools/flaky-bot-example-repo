@@ -19,10 +19,7 @@ jobs:
           node-version: 16.x
           cache: 'npm'
       - run: npm ci
-      # `JEST_RETRIES` doesn't auto enable test retries.
-      # It needs to be used with `jest.retryTimes(numRetries)`.
-      # see: https://github.com/testradar/testradar-example-repo/blob/main/src/setupTests.ts#L7
-      - run: JEST_RETRIES=2 npm test
+      - run: npm test
 
   e2e-test:
     runs-on: ubuntu-latest
@@ -36,8 +33,6 @@ jobs:
           cache: 'npm'
       - name: Cypress Run
         uses: cypress-io/github-action@v5
-        env:
-          CYPRESS_RETRIES: 2
         with:
           command: npm run e2e
 

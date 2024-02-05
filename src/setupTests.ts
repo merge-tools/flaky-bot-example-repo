@@ -4,4 +4,4 @@
 // learn more: https://github.com/testing-library/jest-dom
 import '@testing-library/jest-dom';
 
-jest.retryTimes(Number(process.env.JEST_RETRIES ?? 0));
+jest.retryTimes(2);
