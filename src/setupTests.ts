@@ -4,4 +4,4 @@
 // learn more: https://github.com/testing-library/jest-dom
 import '@testing-library/jest-dom';
 
-jest.retryTimes(2);
+jest.retryTimes(2, { logErrorsBeforeRetry: true });
